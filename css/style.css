@@ -112,6 +112,24 @@ a {
     padding-left: 2%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.day, .activity {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.time {
+    border: 1px solid black;
+}
+
+
 .iframe {
     display: flex;
     background-color: #222831;
@@ -141,7 +159,9 @@ a {
     padding-bottom: 1%;
 }
 
-
+.colorFondo {
+    background-color: rgb(68, 68, 68);
+}
 
 main {
     background-color: #222831;
