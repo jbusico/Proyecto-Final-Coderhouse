@@ -140,6 +140,10 @@ a {
     padding-bottom: 1%;
 }
 
+.card {
+    color: #222831;
+}
+
 main {
     background-color: #222831;
     height: 100vh;
