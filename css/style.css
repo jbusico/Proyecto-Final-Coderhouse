@@ -101,7 +101,7 @@ a {
     display: flex;
     align-items: center;
     background-color: #222831;
-    width: 100%;
+    width: 200%;
 }
 
 .gridImagenes {
@@ -140,6 +140,8 @@ a {
     color: white;
     padding-bottom: 1%;
 }
+
+
 
 main {
     background-color: #222831;
