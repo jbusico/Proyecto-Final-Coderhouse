@@ -129,13 +129,16 @@ a {
     padding-bottom: 1%;
 }
 
-.colorFondo {
-    background-color: rgb(68, 68, 68);
+header {
+    height: 20vh;
 }
 
 main {
-    background-color: #222831;
-    height: 100vh;
+    height: 60vh;
+}
+
+footer {
+    height: 20vh;
 }
 
 .espacioInstructores {
@@ -166,21 +169,6 @@ main {
     background-color: #222831;
     color: white;
     list-style-type: none;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 1px solid white;
-}
-
-.elemento {
-    background-color: #222831;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    border: 1px solid white;
 }
 
 .contacto {
