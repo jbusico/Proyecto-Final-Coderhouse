@@ -11,7 +11,7 @@
 
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,7 +23,7 @@
 .barraNav {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 35%;
     padding: 3%;
     font-size: 20px;
@@ -127,18 +127,6 @@ a {
     background-color: #222831;
     color: white;
     padding-bottom: 1%;
-}
-
-header {
-    height: 20vh;
-}
-
-main {
-    height: 60vh;
-}
-
-footer {
-    height: 20vh;
 }
 
 .espacioInstructores {
