@@ -7,6 +7,10 @@
   
 .body {
     background-color: #222831;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav{
@@ -46,6 +50,10 @@ a {
     background-color: #222831;
     margin: center;
     padding-top: 2%;
+    width: 100%;
+}
+
+.imgFondo img {
     width: 100%;
 }
 
@@ -164,4 +172,23 @@ a {
     background-color: #222831;
     color: white;
     text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    width: 50%;
+}
+
+.submit {
+    align-items: center;
 }
