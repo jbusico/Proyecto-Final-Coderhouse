@@ -9,6 +9,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/lotuslogo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -28,15 +29,15 @@
     </header>
 
     <main class="main">
-        <h3 class="contacto"> Dejanos tus opiniones, comentarios o dudas llenando el siguiente formulario. </h3>
+        <h3 class="contacto" data-aos="zoom-in-right"> Dejanos tus opiniones, comentarios o dudas llenando el siguiente formulario. </h3>
 
-        <h3 class="contacto"> Nos pondremos en contacto con vos lo antes posible para resolver tus dudas! </h3>
+        <h3 class="contacto" data-aos="zoom-out-left"> Nos pondremos en contacto con vos lo antes posible para resolver tus dudas! </h3>
 
-        <h3 class="contacto"> Muchas gracias! </h3>
+        <h3 class="contacto" data-aos="zoom-in-right"> Muchas gracias! </h3>
             
         </form>
 
-        <div class="formulario">
+        <div class="formulario" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Nombre</label>
@@ -79,6 +80,11 @@
         <footer class="footer">
             <p> Todos los derechos reservados® </p>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

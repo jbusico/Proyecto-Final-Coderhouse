@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  
+  .body {
+    background-color: #222831;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  body {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav .logoLotus {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .barraNav {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      width: 35%;
+      padding: 3%;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .barraNav a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    .titulo {
+      text-align: center;
+      background-color: #222831;
+      color: white;
+    }
+  
+    .imgFondo {
+      text-align: center;
+      background-color: #222831;
+      margin: center;
+      padding-top: 2%;
+      width: 100%;
+    }
+  }
+  
+  .imgFondo img {
+    width: 100%;
+  }
+  
+  body {
+    .dirEscuela, .caracteristicas {
+      text-align: center;
+      background-color: #222831;
+      color: white;
+      padding-top: 2%;
+    }
+  
+    .items {
+      background-color: #222831;
+      color: white;
+      padding-top: 2%;
+      padding-left: 2%;
+    }
+  
+    .listItems {
+      background-color: #222831;
+      color: white;
+      padding-top: 2%;
+      font-weight: bold;
+    }
+  
+    .duracionClase {
+      text-align: center;
+      background-color: #222831;
+      color: white;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      padding: 10px;
+      color: white;
+    }
+  
+    duracionClase .day {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  }
+  
+  .activity {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  body grid.time {
+    border: 1px solid black;
+  }
+  
+  .iframe {
+    display: flex;
+    background-color: #222831;
+    padding-top: 2%;
+    justify-content: space-around;
+    padding-bottom: 2%;
+  }
+  
+  .divRedes {
+    background-color: #222831;
+    text-align: center;
+    color: red;
+    padding-top: 1%;
+  }
+  
+  .footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: #222831;
+    color: white;
+  }
+  
+  .instructores {
+    text-align: center;
+    background-color: #222831;
+    color: white;
+    padding-bottom: 1%;
+  }
+  
+  .espacioInstructores {
+    padding-top: 1%;
+  }
+  
+  .histEscuela {
+    text-align: center;
+    background-color: #222831;
+    color: white;
+  }
+  
+  .historia {
+    text-align: center;
+    background-color: #222831;
+    color: white;
+    padding-top: 1%;
+  }
+  
+  #logo_escuela {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+  }
+  
+  .sedes {
+    text-align: center;
+    background-color: #222831;
+    color: white;
+    list-style-type: none;
+  }
+  
+  .contacto {
+    list-style: none;
+    background-color: #222831;
+    color: white;
+    text-align: center;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formulario {
+    width: 50%;
+  }
+  
+  .submit {
+    align-items: center;
+  }
+  

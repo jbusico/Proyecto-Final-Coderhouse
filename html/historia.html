@@ -9,6 +9,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/lotuslogo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -27,33 +28,33 @@
         </nav>
     </header>
 
-    <div class="histEscuela">
+    <div class="histEscuela" data-aos="zoom-out-right">
         <h2> Historia de la Escuela </h2>
     </div>
 
     <div class="histEscuela">
-        <p class="historia"> La escuela tiene sus origenes aproximadamente en el año 2015, cuando los instructores
+        <p class="historia" data-aos="zoom-out-left"> La escuela tiene sus origenes aproximadamente en el año 2015, cuando los instructores
             Noelia
             Ferraro y Silvio Gamboa (compañeros de entrenamiento y pareja) decidieron presentar a algunos alumnos en
             conjunto a distintos campeonatos de nivel local, sin embargo Noelia se distinguia con su "Ferraro Team",
             mientras que Gamboa representaba a Taekwondo
             Argentina Dojang, institución dirigida por Marcelo Pedrini, Maestro y entrenador de ambos.</p>
 
-        <p class="historia"> En el 2017, ambos instructores mas consolidados, Ferraro como entrenadora y Gamboa como
+        <p class="historia" data-aos="zoom-out-right"> En el 2017, ambos instructores mas consolidados, Ferraro como entrenadora y Gamboa como
             competidor, deciden unificar a todos los alumnos de sus distinas sedes y asi pertenecer a una sola escuela.
         </p>
 
-        <p class="historia"> El 1 de Marzo de 2017 se le da el nombre de LOTUS TAEKWONDO ITF. </p>
+        <p class="historia" data-aos="zoom-out-left"> El 1 de Marzo de 2017 se le da el nombre de LOTUS TAEKWONDO ITF. </p>
 
-        <p class="historia"> En Septiembre de 2022 se realiza la 1er Jornada Deportiva exclusiva de la institución. </p>
+        <p class="historia" data-aos="zoom-out-right"> En Septiembre de 2022 se realiza la 1er Jornada Deportiva exclusiva de la institución. </p>
 
-        <p class="historia"> Hasta el momento, la escuela cuenta con mas de cinco sedes en Capital Federal y Buenos
+        <p class="historia" data-aos="zoom-out-left"> Hasta el momento, la escuela cuenta con mas de cinco sedes en Capital Federal y Buenos
             Aires, ha estado presente en los eventos deportivos y técnicos mas importantes a nivel nacional e
             internacional y cuenta con competidores que han formado parte de la Selección Nacional, Campeones
             nacionales, Panamericanos y Mundiales. </p>
     </div>
 
-    <div class="imgFondo">
+    <div class="imgFondo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <img src="../img/historia.jpg" alt="Imagen de un entrenamiento">
     </div>
 
@@ -77,6 +78,11 @@
     <footer class="footer">
         <p> Todos los derechos reservados® </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
