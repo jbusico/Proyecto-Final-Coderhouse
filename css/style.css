@@ -10,27 +10,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
-body .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body nav .logoLotus {
+.logoLotus {
   width: 120px;
   height: 120px;
 }
-body .barraNav {
+.barraNav {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 35%;
   padding: 3%;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 500;
+  clear: both;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
 }
-body .barraNav a {
+.barraNav a {
   text-decoration: none;
   color: white;
 }
@@ -51,7 +51,8 @@ body .imgFondo {
   width: 100%;
 }
 
-body .dirEscuela, body .caracteristicas {
+body .dirEscuela,
+body .caracteristicas {
   text-align: center;
   background-color: #222831;
   color: white;
@@ -91,7 +92,15 @@ body duracionClase .day {
   padding: 10px;
 }
 
-body grid.time {
+body grid .time {
+  border: 1px solid black;
+}
+
+.time {
+  border: 1px solid black;
+}
+
+.day {
   border: 1px solid black;
 }
 
@@ -108,6 +117,9 @@ body grid.time {
   text-align: center;
   color: red;
   padding-top: 1%;
+}
+.divRedes a {
+  text-decoration: none;
 }
 
 .footer {
@@ -178,6 +190,111 @@ body grid.time {
 
 .submit {
   align-items: center;
+}
+
+/*****************************************/
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .barraNav {
+  max-height: 275px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 58px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header {
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: rgb(56, 65, 78);
+}
+
+@media (min-width: 48em) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .header .barraNav {
+    clear: none;
+    float: right;
+    max-height: none;
+    flex-direction: row;
+    font-size: 1.25rem;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
