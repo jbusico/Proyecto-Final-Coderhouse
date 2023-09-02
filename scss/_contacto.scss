@@ -1,0 +1,14 @@
+.contacto {
+  list-style: none;
+  background-color: $bg-color;
+  color: $txt-color;
+  text-align: center;
+}
+
+.formulario {
+  width: 50%;
+}
+
+.contactoContainer {
+  @include mixin-flex(column, center, center);
+}

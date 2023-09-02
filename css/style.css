@@ -1,143 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.body {
+header {
+  width: 100%;
+  z-index: 3;
   background-color: #222831;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-x: hidden;
 }
-
-.logoLotus {
+header .logoLotus {
   width: 120px;
   height: 120px;
 }
-.barraNav {
-  list-style-type: none;
+header .menu-btn {
+  display: none;
+}
+header .menu-btn:checked ~ ul {
+  max-height: 275px;
+}
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+header .menu-btn:hover {
+  background-color: rgb(56, 65, 78);
+}
+header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 58px 20px;
+  position: relative;
+  user-select: none;
+}
+header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+header .menu-icon .navicon:before {
+  top: 5px;
+}
+header .menu-icon .navicon:after {
+  top: -5px;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: unset;
   width: 35%;
-  padding: 3%;
   font-size: 1rem;
   font-weight: 500;
   clear: both;
   transition: max-height 0.2s ease-out;
   max-height: 0;
 }
-.barraNav a {
+header ul li a {
+  display: block;
+  padding: 1rem 1rem;
   text-decoration: none;
   color: white;
 }
-body .titulo {
-  text-align: center;
-  background-color: #222831;
-  color: white;
-}
-body .imgFondo {
-  text-align: center;
-  background-color: #222831;
-  margin: center;
-  padding-top: 2%;
-  width: 100%;
+header ul li a:hover {
+  background-color: rgb(56, 65, 78);
 }
 
-.imgFondo img {
-  width: 100%;
-}
-
-body .dirEscuela,
-body .caracteristicas {
+footer {
   text-align: center;
-  background-color: #222831;
-  color: white;
-  padding-top: 2%;
-}
-body .items {
-  background-color: #222831;
-  color: white;
-  padding-top: 2%;
-  padding-left: 2%;
-}
-body .listItems {
-  background-color: #222831;
-  color: white;
-  padding-top: 2%;
   font-weight: bold;
-}
-body .duracionClase {
-  text-align: center;
   background-color: #222831;
   color: white;
 }
-body .grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-  padding: 10px;
-  color: white;
-}
-body duracionClase .day {
-  border: 1px solid black;
-  padding: 10px;
-}
-
-.activity {
-  border: 1px solid black;
-  padding: 10px;
-}
-
-body grid .time {
-  border: 1px solid black;
-}
-
-.time {
-  border: 1px solid black;
-}
-
-.day {
-  border: 1px solid black;
-}
-
-.iframe {
-  display: flex;
-  background-color: #222831;
-  padding-top: 2%;
-  justify-content: space-around;
-  padding-bottom: 2%;
-}
-
-.divRedes {
-  background-color: #222831;
+footer .divRedes {
   text-align: center;
   color: red;
   padding-top: 1%;
 }
-.divRedes a {
+footer .divRedes a {
   text-decoration: none;
 }
+footer p {
+  margin: 0;
+}
 
-.footer {
-  text-align: center;
-  font-weight: bold;
+main {
   background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  overflow: hidden;
+  flex-grow: 1;
+}
+main .titulo {
+  text-align: center;
+  color: white;
+}
+main .imgFondo {
+  text-align: center;
+  margin: center;
+  padding-top: 2%;
+  width: 100%;
+}
+main .imgFondo img {
+  width: 100%;
+}
+main .dirEscuela,
+main .caracteristicas {
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+}
+main .items {
+  color: white;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+main .listItems {
+  color: white;
+  padding-top: 2%;
+  font-weight: bold;
+}
+main .duracionClase {
+  text-align: center;
   color: white;
 }
 
-.instructores {
+.nosotrosContainer .instructores {
   text-align: center;
   background-color: #222831;
   color: white;
   padding-bottom: 1%;
-}
-
-.espacioInstructores {
-  padding-top: 1%;
 }
 
 .histEscuela {
@@ -145,18 +157,21 @@ body grid .time {
   background-color: #222831;
   color: white;
 }
-
-.historia {
+.histEscuela .historia {
   text-align: center;
   background-color: #222831;
   color: white;
   padding-top: 1%;
 }
 
-#logo_escuela {
-  width: 120px;
-  height: 120px;
-  text-align: center;
+.iframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: unset;
+  background-color: #222831;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .sedes {
@@ -166,6 +181,25 @@ body grid .time {
   list-style-type: none;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 10px;
+  color: white;
+}
+.grid .day {
+  border: 1px solid black;
+  padding: 10px;
+}
+.grid .activity {
+  border: 1px solid black;
+  padding: 10px;
+}
+.grid .time {
+  border: 1px solid black;
+}
+
 .contacto {
   list-style: none;
   background-color: #222831;
@@ -173,128 +207,55 @@ body grid .time {
   text-align: center;
 }
 
-.row {
-  margin: 0;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .formulario {
   width: 50%;
 }
 
-.submit {
+.contactoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-/*****************************************/
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .barraNav {
-  max-height: 275px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-.header .menu-icon {
-  cursor: pointer;
-  float: right;
-  padding: 58px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: white;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: white;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-.header {
-  width: 100%;
-  z-index: 3;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-
-.header li a {
-  display: block;
-  padding: 1rem 1rem;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: rgb(56, 65, 78);
-}
-
-@media (min-width: 48em) {
-  .header {
+@media (min-width: 90em) {
+  header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
   }
-  .header .barraNav {
+  header .menu-icon {
+    display: none;
+  }
+  header ul {
     clear: none;
     float: right;
     max-height: none;
     flex-direction: row;
     font-size: 1.25rem;
   }
-  .header .menu-icon {
-    display: none;
+}
+@media (max-width: 48em) {
+  .iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
+  .grid {
+    overflow-x: scroll;
+  }
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  background-color: #222831;
 }
 
 /*# sourceMappingURL=style.css.map */

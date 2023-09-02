@@ -1,0 +1,17 @@
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color: $bg-color;
+  color: $txt-color;
+  .divRedes {
+    text-align: center;
+    color: red;
+    padding-top: 1%;
+    a {
+      text-decoration: none;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}

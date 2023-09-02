@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  z-index: 3;
+  background-color: $bg-color;
+  .logoLotus {
+    width: 120px;
+    height: 120px;
+  }
+  .menu-btn {
+    display: none;
+    &:checked ~ {
+      ul {
+        max-height: 275px;
+      }
+
+      .menu-icon {
+        &:not(.steps) .navicon {
+          &:before,
+          &:after {
+            top: 0;
+          }
+        }
+
+        .navicon {
+          background: transparent;
+          &:before {
+            transform: rotate(-45deg);
+          }
+          &:after {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 58px 20px;
+    position: relative;
+    user-select: none;
+    .navicon {
+      background: $txt-color;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+      &:before,
+      &:after {
+        background: $txt-color;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+      &:before {
+        top: 5px;
+      }
+      &:after {
+        top: -5px;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    @include mixin-flex(column, space-around);
+    width: 35%;
+    font-size: 1rem;
+    font-weight: 500;
+    clear: both;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+    li a {
+      display: block;
+      padding: 1rem 1rem;
+      text-decoration: none;
+      color: $txt-color;
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}

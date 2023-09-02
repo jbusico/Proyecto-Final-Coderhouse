@@ -1,0 +1,26 @@
+@media (min-width: 90em) {
+  header {
+    @include mixin-flex(row, space-between, center);
+    padding: 0 2rem;
+    .menu-icon {
+      display: none;
+    }
+    ul {
+      clear: none;
+      float: right;
+      max-height: none;
+      flex-direction: row;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .iframe {
+    @include mixin-flex(column, center, center);
+    gap: 2rem;
+  }
+  .grid {
+    overflow-x: scroll;
+  }
+}

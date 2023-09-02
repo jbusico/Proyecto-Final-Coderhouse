@@ -1,0 +1,32 @@
+.iframe {
+  @include mixin-flex(row, space-around);
+  background-color: $bg-color;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.sedes {
+  text-align: center;
+  background-color: $bg-color;
+  color: $txt-color;
+  list-style-type: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 10px;
+  color: $txt-color;
+  .day {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .activity {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .time {
+    border: 1px solid black;
+  }
+}

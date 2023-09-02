@@ -1,0 +1,39 @@
+main {
+  background-color: $bg-color;
+  @include mixin-flex(column, space-between);
+  overflow: hidden;
+  flex-grow: 1;
+  .titulo {
+    text-align: center;
+    color: $txt-color;
+  }
+  .imgFondo {
+    text-align: center;
+    margin: center;
+    padding-top: 2%;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .dirEscuela,
+  .caracteristicas {
+    text-align: center;
+    color: $txt-color;
+    padding-top: 2%;
+  }
+  .items {
+    color: $txt-color;
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+  .listItems {
+    color: $txt-color;
+    padding-top: 2%;
+    font-weight: bold;
+  }
+  .duracionClase {
+    text-align: center;
+    color: $txt-color;
+  }
+}
