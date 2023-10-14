@@ -3,31 +3,39 @@ header {
   z-index: 3;
   background-color: #222831;
 }
+
 header .logoLotus {
   width: 120px;
   height: 120px;
 }
+
 header .menu-btn {
   display: none;
 }
 header .menu-btn:checked ~ ul {
   max-height: 275px;
 }
+
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
 header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
+
 header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
+
 header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
+
 header .menu-btn:hover {
   background-color: rgb(56, 65, 78);
 }
+
 header .menu-icon {
   cursor: pointer;
   float: right;
@@ -35,6 +43,7 @@ header .menu-icon {
   position: relative;
   user-select: none;
 }
+
 header .menu-icon .navicon {
   background: white;
   display: block;
@@ -43,6 +52,7 @@ header .menu-icon .navicon {
   transition: background 0.2s ease-out;
   width: 18px;
 }
+
 header .menu-icon .navicon:before, header .menu-icon .navicon:after {
   background: white;
   content: "";
@@ -52,12 +62,15 @@ header .menu-icon .navicon:before, header .menu-icon .navicon:after {
   transition: all 0.2s ease-out;
   width: 100%;
 }
+
 header .menu-icon .navicon:before {
   top: 5px;
 }
+
 header .menu-icon .navicon:after {
   top: -5px;
 }
+
 header ul {
   margin: 0;
   padding: 0;
@@ -74,12 +87,19 @@ header ul {
   transition: max-height 0.2s ease-out;
   max-height: 0;
 }
+
 header ul li a {
   display: block;
   padding: 1rem 1rem;
   text-decoration: none;
   color: white;
 }
+
+header ul li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 header ul li a:hover {
   background-color: rgb(56, 65, 78);
 }
@@ -218,6 +238,17 @@ main .duracionClase {
   align-items: center;
 }
 
+#galeria {
+  margin: 1rem auto;
+  width:100%;
+  max-width:960px;
+  column-count: 3;
+}
+
+.imgGaleria {
+  width: 300px;
+}
+
 @media (min-width: 90em) {
   header {
     display: flex;
@@ -257,5 +288,9 @@ body {
   align-items: unset;
   background-color: #222831;
 }
-
+@media (max-width: 480px) {
+  #galeria {
+      columns: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
